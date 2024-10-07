@@ -5,15 +5,15 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
-  
-"scripts": {
-  "build":"bun install",
-  "dev":"bun run index.ts"
-},
+  "scripts": {
+    "build": "bun install",
+    "dev": "bun run index.ts"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@types/body-parser": "^1.19.5",
     "@types/express": "^5.0.0",
     "@types/node": "^22.7.4"
   }
