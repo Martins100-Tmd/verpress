@@ -1,7 +1,11 @@
 import express, { type Response, type Request } from 'express';
 import bodyParser from 'body-parser';
 const app = express();
-app.use(bodyParser.json());
+app.use(
+   bodyParser.json({
+      limit: '500mb',
+   })
+);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req: Request, res: Response) => {
